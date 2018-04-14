@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6125B63E2081B64600150FCE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6125B63B2081B64400150FCE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6125B6422081B65800150FCE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6125B63C2081B64600150FCE /* Realm.framework */; };
+		6125B6432081B65800150FCE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6125B63C2081B64600150FCE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6125B6442081B67100150FCE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6125B63B2081B64400150FCE /* RealmSwift.framework */; };
 		6177103920819DF0008360F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177103820819DF0008360F1 /* AppDelegate.swift */; };
 		6177103B20819DF0008360F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177103A20819DF0008360F1 /* ViewController.swift */; };
 		6177103E20819DF0008360F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6177103C20819DF0008360F1 /* Main.storyboard */; };
@@ -35,7 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6125B6412081B64600150FCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6125B6432081B65800150FCE /* Realm.framework in Embed Frameworks */,
+				6125B63E2081B64600150FCE /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6125B63B2081B64400150FCE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		6125B63C2081B64600150FCE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		6177103520819DF0008360F1 /* Numismatics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numismatics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6177103820819DF0008360F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6177103A20819DF0008360F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6125B6422081B65800150FCE /* Realm.framework in Frameworks */,
+				6125B6442081B67100150FCE /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6125B6352081B42500150FCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6125B63C2081B64600150FCE /* Realm.framework */,
+				6125B63B2081B64400150FCE /* RealmSwift.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		6177102C20819DF0008360F1 = {
 			isa = PBXGroup;
 			children = (
+				6125B6352081B42500150FCE /* Frameworks */,
 				6177103720819DF0008360F1 /* Numismatics */,
 				6177104F20819DF2008360F1 /* NumismaticsTests */,
 				6177105A20819DF2008360F1 /* NumismaticsUITests */,
@@ -181,6 +214,8 @@
 				6177103120819DF0008360F1 /* Sources */,
 				6177103220819DF0008360F1 /* Frameworks */,
 				6177103320819DF0008360F1 /* Resources */,
+				6125B6412081B64600150FCE /* Embed Frameworks */,
+				6125B6452081B6FE00150FCE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -296,6 +331,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6125B6452081B6FE00150FCE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6177103120819DF0008360F1 /* Sources */ = {
@@ -480,6 +531,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Numismatics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,6 +554,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Numismatics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
