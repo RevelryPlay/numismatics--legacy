@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6177103920819DF0008360F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177103820819DF0008360F1 /* AppDelegate.swift */; };
+		6177103B20819DF0008360F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177103A20819DF0008360F1 /* ViewController.swift */; };
+		6177103E20819DF0008360F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6177103C20819DF0008360F1 /* Main.storyboard */; };
+		6177104120819DF0008360F1 /* Numismatics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6177103F20819DF0008360F1 /* Numismatics.xcdatamodeld */; };
+		6177104320819DF1008360F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6177104220819DF1008360F1 /* Assets.xcassets */; };
+		6177104620819DF1008360F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6177104420819DF1008360F1 /* LaunchScreen.storyboard */; };
+		6177105120819DF2008360F1 /* NumismaticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177105020819DF2008360F1 /* NumismaticsTests.swift */; };
+		6177105C20819DF2008360F1 /* NumismaticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177105B20819DF2008360F1 /* NumismaticsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6177104D20819DF2008360F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6177102D20819DF0008360F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6177103420819DF0008360F1;
+			remoteInfo = Numismatics;
+		};
+		6177105820819DF2008360F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6177102D20819DF0008360F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6177103420819DF0008360F1;
+			remoteInfo = Numismatics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6177103520819DF0008360F1 /* Numismatics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numismatics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6177103820819DF0008360F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6177103A20819DF0008360F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6177103D20819DF0008360F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6177104020819DF0008360F1 /* Numismatics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Numismatics.xcdatamodel; sourceTree = "<group>"; };
+		6177104220819DF1008360F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6177104520819DF1008360F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6177104720819DF1008360F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6177104C20819DF1008360F1 /* NumismaticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumismaticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6177105020819DF2008360F1 /* NumismaticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumismaticsTests.swift; sourceTree = "<group>"; };
+		6177105220819DF2008360F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6177105720819DF2008360F1 /* NumismaticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumismaticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6177105B20819DF2008360F1 /* NumismaticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumismaticsUITests.swift; sourceTree = "<group>"; };
+		6177105D20819DF2008360F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6177103220819DF0008360F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177104920819DF1008360F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177105420819DF2008360F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6177102C20819DF0008360F1 = {
+			isa = PBXGroup;
+			children = (
+				6177103720819DF0008360F1 /* Numismatics */,
+				6177104F20819DF2008360F1 /* NumismaticsTests */,
+				6177105A20819DF2008360F1 /* NumismaticsUITests */,
+				6177103620819DF0008360F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6177103620819DF0008360F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6177103520819DF0008360F1 /* Numismatics.app */,
+				6177104C20819DF1008360F1 /* NumismaticsTests.xctest */,
+				6177105720819DF2008360F1 /* NumismaticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6177103720819DF0008360F1 /* Numismatics */ = {
+			isa = PBXGroup;
+			children = (
+				6177103820819DF0008360F1 /* AppDelegate.swift */,
+				6177103A20819DF0008360F1 /* ViewController.swift */,
+				6177103C20819DF0008360F1 /* Main.storyboard */,
+				6177104220819DF1008360F1 /* Assets.xcassets */,
+				6177104420819DF1008360F1 /* LaunchScreen.storyboard */,
+				6177104720819DF1008360F1 /* Info.plist */,
+				6177103F20819DF0008360F1 /* Numismatics.xcdatamodeld */,
+			);
+			path = Numismatics;
+			sourceTree = "<group>";
+		};
+		6177104F20819DF2008360F1 /* NumismaticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6177105020819DF2008360F1 /* NumismaticsTests.swift */,
+				6177105220819DF2008360F1 /* Info.plist */,
+			);
+			path = NumismaticsTests;
+			sourceTree = "<group>";
+		};
+		6177105A20819DF2008360F1 /* NumismaticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6177105B20819DF2008360F1 /* NumismaticsUITests.swift */,
+				6177105D20819DF2008360F1 /* Info.plist */,
+			);
+			path = NumismaticsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6177103420819DF0008360F1 /* Numismatics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6177106020819DF2008360F1 /* Build configuration list for PBXNativeTarget "Numismatics" */;
+			buildPhases = (
+				6177103120819DF0008360F1 /* Sources */,
+				6177103220819DF0008360F1 /* Frameworks */,
+				6177103320819DF0008360F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Numismatics;
+			productName = Numismatics;
+			productReference = 6177103520819DF0008360F1 /* Numismatics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6177104B20819DF1008360F1 /* NumismaticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6177106320819DF2008360F1 /* Build configuration list for PBXNativeTarget "NumismaticsTests" */;
+			buildPhases = (
+				6177104820819DF1008360F1 /* Sources */,
+				6177104920819DF1008360F1 /* Frameworks */,
+				6177104A20819DF1008360F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6177104E20819DF2008360F1 /* PBXTargetDependency */,
+			);
+			name = NumismaticsTests;
+			productName = NumismaticsTests;
+			productReference = 6177104C20819DF1008360F1 /* NumismaticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6177105620819DF2008360F1 /* NumismaticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6177106620819DF2008360F1 /* Build configuration list for PBXNativeTarget "NumismaticsUITests" */;
+			buildPhases = (
+				6177105320819DF2008360F1 /* Sources */,
+				6177105420819DF2008360F1 /* Frameworks */,
+				6177105520819DF2008360F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6177105920819DF2008360F1 /* PBXTargetDependency */,
+			);
+			name = NumismaticsUITests;
+			productName = NumismaticsUITests;
+			productReference = 6177105720819DF2008360F1 /* NumismaticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6177102D20819DF0008360F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Kylie Benfield";
+				TargetAttributes = {
+					6177103420819DF0008360F1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					6177104B20819DF1008360F1 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 6177103420819DF0008360F1;
+					};
+					6177105620819DF2008360F1 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 6177103420819DF0008360F1;
+					};
+				};
+			};
+			buildConfigurationList = 6177103020819DF0008360F1 /* Build configuration list for PBXProject "Numismatics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6177102C20819DF0008360F1;
+			productRefGroup = 6177103620819DF0008360F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6177103420819DF0008360F1 /* Numismatics */,
+				6177104B20819DF1008360F1 /* NumismaticsTests */,
+				6177105620819DF2008360F1 /* NumismaticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6177103320819DF0008360F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6177104620819DF1008360F1 /* LaunchScreen.storyboard in Resources */,
+				6177104320819DF1008360F1 /* Assets.xcassets in Resources */,
+				6177103E20819DF0008360F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177104A20819DF1008360F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177105520819DF2008360F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6177103120819DF0008360F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6177103B20819DF0008360F1 /* ViewController.swift in Sources */,
+				6177103920819DF0008360F1 /* AppDelegate.swift in Sources */,
+				6177104120819DF0008360F1 /* Numismatics.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177104820819DF1008360F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6177105120819DF2008360F1 /* NumismaticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6177105320819DF2008360F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6177105C20819DF2008360F1 /* NumismaticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6177104E20819DF2008360F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6177103420819DF0008360F1 /* Numismatics */;
+			targetProxy = 6177104D20819DF2008360F1 /* PBXContainerItemProxy */;
+		};
+		6177105920819DF2008360F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6177103420819DF0008360F1 /* Numismatics */;
+			targetProxy = 6177105820819DF2008360F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6177103C20819DF0008360F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6177103D20819DF0008360F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6177104420819DF1008360F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6177104520819DF1008360F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6177105E20819DF2008360F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6177105F20819DF2008360F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6177106120819DF2008360F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = Numismatics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.Numismatics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6177106220819DF2008360F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = Numismatics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.Numismatics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6177106420819DF2008360F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = NumismaticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.NumismaticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numismatics.app/Numismatics";
+			};
+			name = Debug;
+		};
+		6177106520819DF2008360F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = NumismaticsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.NumismaticsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numismatics.app/Numismatics";
+			};
+			name = Release;
+		};
+		6177106720819DF2008360F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = NumismaticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.NumismaticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Numismatics;
+			};
+			name = Debug;
+		};
+		6177106820819DF2008360F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JLUUZNDE4;
+				INFOPLIST_FILE = NumismaticsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbenfield.NumismaticsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Numismatics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6177103020819DF0008360F1 /* Build configuration list for PBXProject "Numismatics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6177105E20819DF2008360F1 /* Debug */,
+				6177105F20819DF2008360F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6177106020819DF2008360F1 /* Build configuration list for PBXNativeTarget "Numismatics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6177106120819DF2008360F1 /* Debug */,
+				6177106220819DF2008360F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6177106320819DF2008360F1 /* Build configuration list for PBXNativeTarget "NumismaticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6177106420819DF2008360F1 /* Debug */,
+				6177106520819DF2008360F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6177106620819DF2008360F1 /* Build configuration list for PBXNativeTarget "NumismaticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6177106720819DF2008360F1 /* Debug */,
+				6177106820819DF2008360F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6177103F20819DF0008360F1 /* Numismatics.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6177104020819DF0008360F1 /* Numismatics.xcdatamodel */,
+			);
+			currentVersion = 6177104020819DF0008360F1 /* Numismatics.xcdatamodel */;
+			path = Numismatics.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6177102D20819DF0008360F1 /* Project object */;
+}
