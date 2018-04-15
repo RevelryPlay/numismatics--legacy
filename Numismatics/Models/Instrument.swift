@@ -25,18 +25,25 @@ class Instrument {
     
     var description: String?
     
+    init(withDataSource: String) {
+        
+        // TBD
+        
+        self.description = "Instrument"
+        
+    }
+    
     func getPaymentDates(start: Date, end: Date) -> [Date] {
         
         //InstrumentConstants.DateRanges.day
         
         var periods: [Date]
         
-        var nextDate: Date
+        periods = []
         
+        var nextDate = Date()
         
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyymmdd"
-//        nextDate = formatter.date(from: "20160601")
+        nextDate += 10 // add 10 sec
         
         periods.append(nextDate)
         
