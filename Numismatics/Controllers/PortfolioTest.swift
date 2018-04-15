@@ -10,11 +10,15 @@ import Foundation
 
 class PortfolioTest {
     
-    var myPortfolio = Portfolio(withDataSource: "none")
-    
-    let start = Date(timeIntervalSinceNow: 0)
-    let end = Date(timeIntervalSinceNow: -86400) // one day in seconds
-    
-    myPortfolio.generatePaymentDates(start: start, end: end)
+    func writePortfolioToConsole() {
+        
+        let portfolio = Portfolio(withDataSource: "none")
+        
+        let start = Date(timeIntervalSinceNow: 0)
+        let end = Date(timeIntervalSinceNow: -86400) // one day in seconds
+        
+        portfolio.writePortfolioToConsole(start: start, end: end)
+        
+    }
     
 }

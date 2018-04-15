@@ -16,7 +16,7 @@ class Portfolio {
         
     }
     
-    func generatePaymentDates(start: Date, end: Date) {
+    func writePortfolioToConsole(start: Date, end: Date) {
         
         var instruments = [Instrument]()
         
